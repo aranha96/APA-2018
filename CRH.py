@@ -17,7 +17,7 @@ def CountingSort(arr,n,pos):
     for i in range(0,intervalo):
         aux[i] += aux[i - 1]
 
-    i = n - 1
+    i = n//2 - 1
     while(i >= 0):
         
         saida[aux[int((arr[i]/pos)%intervalo)]- 1] = arr[i]
